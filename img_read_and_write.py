@@ -7,7 +7,7 @@ cv.imshow("display image",img)
 
  
 
-k = cv.waitKey(0)
+k = cv.waitKey(0)  # wait for indefinet  
 if k == ord('s'):
     cv.imwrite('tested/research.jpg',img)
 cv.destroyAllWindows()
