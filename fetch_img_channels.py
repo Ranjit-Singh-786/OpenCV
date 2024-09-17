@@ -14,9 +14,11 @@ red_channel = img_arr[:, :, 2]
 zeros = np.zeros_like(blue_channel)
 
 # Combine channels to show each color in its full color
-red_image = cv.merge([zeros, zeros, red_channel])    # Red channel image
-green_image = cv.merge([zeros, green_channel, zeros])  # Green channel image
 blue_image = cv.merge([blue_channel, zeros, zeros])   # Blue channel image  
+green_image = cv.merge([zeros, green_channel, zeros])  # Green channel image
+red_image = cv.merge([zeros, zeros, red_channel])    # Red channel image
+
+
 
 
 
